@@ -19,5 +19,10 @@ module.exports = {
     resolve:{
         extensions:['.ts', '.js']
     },
-    target:"web"
+    target:"web",
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 3000,
+      },
 }
